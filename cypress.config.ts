@@ -25,7 +25,7 @@ module.exports = defineConfig({
     runMode: 2,
   },
   env: {
-    apiUrl: "http://localhost:3002",
+    apiUrl: "http://localhost:3001",
     mobileViewportWidthBreakpoint: 414,
     coverage: false,
     codeCoverage: {
@@ -72,7 +72,7 @@ module.exports = defineConfig({
            * so users can switch between CT and E2E testing without having to
            * stop/start the RWA dev server.
            */
-          port: 3002,
+          port: 3001,
         },
       };
 
