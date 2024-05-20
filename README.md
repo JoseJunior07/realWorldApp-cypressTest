@@ -1,3 +1,51 @@
+# Projeto de Testes de Autenticação
+
+Este projeto é um clone feito para o fins de estudo e contém testes automatizados para a funcionalidade de login e registro de usuários da aplicação Real World App, utilizando Cypress.
+
+## Estrutura do Projeto
+
+- `cypress/integration/login.spec.js`: Contém os testes para a funcionalidade de login.
+- `cypress/integration/register.spec.js`: Contém os testes para a funcionalidade de registro de usuário.
+- `data/datauser.json`: Arquivo JSON com os dados de usuário utilizados nos testes.
+
+## Pré-requisitos
+
+- Node.js instalado
+- Cypress instalado
+
+Testes de Login
+Os testes de login estão definidos em `cypress/integration/login.spec.js` e incluem os seguintes cenários:
+
+1. **Login com credenciais válidas**
+   - Carrega as credenciais do arquivo `data/datauser.json`.
+   - Realiza o login com um usuário válido e senha válida.
+
+2. **Login com usuário e senha inválidos**
+   - Testa o login com um usuário e senha inválidos.
+   - Verifica a mensagem de erro "Username or password is invalid".
+
+3. **Login com usuário válido e senha inválida**
+   - Testa o login com um usuário válido e uma senha inválida.
+   - Verifica a mensagem de erro "Username or password is invalid".
+
+4. **Login com usuário inválido e senha válida**
+   - Testa o login com um usuário inválido e uma senha válida.
+   - Verifica a mensagem de erro "Username or password is invalid".
+
+Testes de Registro de Usuário
+Os testes de registro de usuário estão definidos em `cypress/integration/register.spec.js` e incluem os seguintes cenários:
+
+1. **Registro de novo usuário com informações válidas**
+   - Clica no botão de registro.
+   - Preenche os campos obrigatórios com informações válidas.
+   - Submete o formulário e verifica se a URL muda para `/signup`.
+
+2. **Registro de novo usuário com informações incompletas**
+   - Clica no botão de registro.
+   - Deixa os campos obrigatórios vazios e verifica as mensagens de erro exibidas para cada campo.
+
+Todo o processo de instalação e como rodar o app seguem abaixo!
+
 <p align="center">
   <!-- We use two SVGs here so that this displays correctly
     on Github. This might not look right in other Markdown previewers. -->
