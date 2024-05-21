@@ -17,14 +17,17 @@ Testes de Login
 Os testes de login estão definidos em `cypress/integration/login.spec.js` e incluem os seguintes cenários:
 
 1. **Login com credenciais válidas**
+
    - Carrega as credenciais do arquivo `data/datauser.json`.
    - Realiza o login com um usuário válido e senha válida.
 
 2. **Login com usuário e senha inválidos**
+
    - Testa o login com um usuário e senha inválidos.
    - Verifica a mensagem de erro "Username or password is invalid".
 
 3. **Login com usuário válido e senha inválida**
+
    - Testa o login com um usuário válido e uma senha inválida.
    - Verifica a mensagem de erro "Username or password is invalid".
 
@@ -36,6 +39,7 @@ Testes de Registro de Usuário
 Os testes de registro de usuário estão definidos em `cypress/integration/register.spec.js` e incluem os seguintes cenários:
 
 1. **Registro de novo usuário com informações válidas**
+
    - Clica no botão de registro.
    - Preenche os campos obrigatórios com informações válidas.
    - Submete o formulário e verifica se a URL muda para `/signup`.
