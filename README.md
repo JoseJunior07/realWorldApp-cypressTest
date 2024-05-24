@@ -4,16 +4,18 @@ Este projeto é um clone feito para o fins de estudo e contém testes automatiza
 
 ## Estrutura do Projeto
 
-- `cypress/integration/login.spec.js`: Contém os testes para a funcionalidade de login.
-- `cypress/integration/register.spec.js`: Contém os testes para a funcionalidade de registro de usuário.
+- `cypress/tests/ui/login.spec.js`: Contém os testes para a funcionalidade de login.
+- `cypress/tests/ui/register.spec.js`: Contém os testes para a funcionalidade de registro de usuário.
+- `cypress/tests/ui/transfer.spec.js`: Contém os testes para a funcionalidade de envio de dinheiro.
 - `data/datauser.json`: Arquivo JSON com os dados de usuário utilizados nos testes.
+
 
 ## Pré-requisitos
 
 - Node.js instalado
 - Cypress instalado
 
-Testes de Login
+## Testes de Login
 Os testes de login estão definidos em `cypress/integration/login.spec.js` e incluem os seguintes cenários:
 
 1. **Login com credenciais válidas**
@@ -35,7 +37,7 @@ Os testes de login estão definidos em `cypress/integration/login.spec.js` e inc
    - Testa o login com um usuário inválido e uma senha válida.
    - Verifica a mensagem de erro "Username or password is invalid".
 
-Testes de Registro de Usuário
+## Testes de Registro de Usuário
 Os testes de registro de usuário estão definidos em `cypress/integration/register.spec.js` e incluem os seguintes cenários:
 
 1. **Registro de novo usuário com informações válidas**
@@ -47,6 +49,30 @@ Os testes de registro de usuário estão definidos em `cypress/integration/regis
 2. **Registro de novo usuário com informações incompletas**
    - Clica no botão de registro.
    - Deixa os campos obrigatórios vazios e verifica as mensagens de erro exibidas para cada campo.
+
+## Testes de Envio de Dinheiro
+Os testes de envio de dinheiro entre contatos estão definidos em `cypress/tests/ui/transfer.spec.js` e incluem os seguintes cenários:
+
+1. **Transferência de valor para um contato com saldo suficiente**
+   - Realiza login com um usuário.
+   - Navega até a página de transferência.
+   - Seleciona um contato com saldo suficiente.
+   - Preenche o valor e a descrição da transferência.
+   - Submete a transferência e verifica se a transação é concluída com sucesso.
+
+2. **Transferência de valor com saldo insuficiente**
+   - Realiza login com um usuário.
+   - Navega até a página de transferência.
+   - Seleciona um contato com saldo insuficiente.
+   - Preenche o valor e a descrição da transferência.
+   - Submete a transferência e verifica se é exibida a mensagem de erro de saldo insuficiente.
+
+3. **Exibição de mensagem de erro para campo de valor vazio**
+   - Realiza login com um usuário.
+   - Navega até a página de transferência.
+   - Deixa o campo de valor vazio e tenta submeter a transferência.
+   - Verifica se é exibida a mensagem de erro indicando que um valor válido deve ser inserido.
+
 
 Todo o processo de instalação e como rodar o app seguem abaixo!
 
