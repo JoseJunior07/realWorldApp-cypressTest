@@ -76,48 +76,15 @@
       "modifiedAt": "2024-03-07T00:07:36.510Z"
     },
     {
-      "id": "A1PwQZM6L",
-      "uuid": "f93f4d73-b03c-4d01-b719-c0d6b1cadb4a",
+      "id": "KG2Yb4eEQ",
+      "uuid": "2c3a8db4-fbbd-4c7b-bae9-1cde112173c7",
       "firstName": "test_First_Name",
       "lastName": "test_Last_Name",
       "username": "test_Username",
-      "password": "$2a$10$.0mAkRKhGa0CGXhg41Cm.Ol1YPuai8jHbHhVmrM.ugcFwBlkZta6K",
+      "password": "$2a$10$72reeB3bB3Vxc0gK6Lozn./KlNRnNRLFoFDvYbgAq2p8s/HD5MNmm",
       "balance": 0,
-      "createdAt": "2024-05-28T17:30:51.462Z",
-      "modifiedAt": "2024-05-28T17:30:51.462Z"
-    },
-    {
-      "id": "P8ELuOc_l",
-      "uuid": "96f025a6-63b5-4e03-a664-ad0b3e54aa49",
-      "firstName": "test_First_Name",
-      "lastName": "test_Last_Name",
-      "username": "test_Username",
-      "password": "$2a$10$62sJ2F0hjPJ6FMxoEWeTIOwd6U6ZvM8NyrdXrSeBp6UtTKAG1EOyW",
-      "balance": 0,
-      "createdAt": "2024-05-28T17:31:16.875Z",
-      "modifiedAt": "2024-05-28T17:31:16.875Z"
-    },
-    {
-      "id": "6hMTK9SH-",
-      "uuid": "35589ad1-6ad4-499d-9d04-34796a722f28",
-      "firstName": "test_First_Name",
-      "lastName": "test_Last_Name",
-      "username": "test_Username",
-      "password": "$2a$10$DtJHjP1Dy/ERar0776lLouazwOGH5getQghKqBb7jUQEcxIYZRj/G",
-      "balance": 0,
-      "createdAt": "2024-05-28T17:31:48.100Z",
-      "modifiedAt": "2024-05-28T17:31:48.100Z"
-    },
-    {
-      "id": "zztHz-wLZ",
-      "uuid": "c284a2f8-8529-4b6d-a7cd-76e5c4c38600",
-      "firstName": "test_First_Name",
-      "lastName": "test_Last_Name",
-      "username": "test_Username",
-      "password": "$2a$10$DrvMumdHWvAymeqYdRibeezIN9Ju5uPBvFmSaumQfJCoaNvg2tbAC",
-      "balance": 0,
-      "createdAt": "2024-05-28T17:32:04.572Z",
-      "modifiedAt": "2024-05-28T17:32:04.572Z"
+      "createdAt": "2024-05-28T17:56:59.454Z",
+      "modifiedAt": "2024-05-28T17:56:59.454Z"
     }
   ],
   "contacts": [
@@ -299,15 +266,15 @@
       "modifiedAt": "2024-03-07T08:44:31.174Z"
     },
     {
-      "id": "q8CUy9gve",
-      "uuid": "4c5d7724-7648-47db-8164-a57e6927e5e0",
-      "userId": "A1PwQZM6L",
+      "id": "JcYzv7_KL",
+      "uuid": "2f0692a3-82e3-4dfe-a36b-4d57b7472be9",
+      "userId": "KG2Yb4eEQ",
       "bankName": "12345",
       "accountNumber": "123456789",
       "routingNumber": "123456789",
       "isDeleted": false,
-      "createdAt": "2024-05-28T17:31:19.813Z",
-      "modifiedAt": "2024-05-28T17:31:19.813Z"
+      "createdAt": "2024-05-28T17:57:02.289Z",
+      "modifiedAt": "2024-05-28T17:57:02.289Z"
     }
   ],
   "transactions": [
