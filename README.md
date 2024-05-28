@@ -7,8 +7,8 @@ Este projeto é um clone feito para o fins de estudo e contém testes automatiza
 - `cypress/tests/ui/login.spec.js`: Contém os testes para a funcionalidade de login.
 - `cypress/tests/ui/register.spec.js`: Contém os testes para a funcionalidade de registro de usuário.
 - `cypress/tests/ui/transfer.spec.js`: Contém os testes para a funcionalidade de envio de dinheiro.
+- `cypress/tests/ui/tranferHistoric.spec.js`: Contém os testes para a funcionalidade de visualização do histórico de transações.
 - `data/datauser.json`: Arquivo JSON com os dados de usuário utilizados nos testes.
-
 
 ## Pré-requisitos
 
@@ -73,6 +73,27 @@ Os testes de envio de dinheiro entre contatos estão definidos em `cypress/tests
    - Deixa o campo de valor vazio e tenta submeter a transferência.
    - Verifica se é exibida a mensagem de erro indicando que um valor válido deve ser inserido.
 
+## Testes de Criação de Conta e Visualização do Histórico de Transações
+Os testes de criação de conta e visualização do histórico de transações estão definidos em `cypress/integration/transactions.spec.js` e incluem os seguintes cenários:
+
+1. **Visualizar histórico de transações com sucesso**
+   - Carrega as credenciais do arquivo data/datauser.json.
+   - Realiza o login com um usuário válido e senha válida.
+   - Verifica se a lista de transações está visível.
+   - Tentar visualizar o histórico de transações de um usuário sem transações anteriores
+
+2. **Realiza o registro de um novo usuário**
+   - Clica no botão de registro.
+   - Preenche os campos obrigatórios com informações válidas.
+   - Submete o formulário e verifica se a URL muda para /signup.
+   - Realiza o login com o novo usuário:
+   - Utiliza o nome de usuário e senha fornecidos durante o registro.
+   - Verifica se a mensagem "No Transactions" é exibida.
+
+3. **Verifica se a mensagem de "No Transactions e o botão de "Create Transaction estão visíveis"**
+   - Utiliza o nome de usuário e senha fornecidos durante o registro.
+   - Verifica se a mensagem "No Transactions" é exibida.
+   - Verifica se o botão de "Create Transaction" é exibido.
 
 Todo o processo de instalação e como rodar o app seguem abaixo!
 
